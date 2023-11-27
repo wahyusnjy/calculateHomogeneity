@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Uji Homogenitas Data</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Uji Homogenitas Data</h2>
+        <form id="dataForm">
+            <label for="group1">Group 1 Data:</label>
+            <input type="text" id="group1" placeholder="Enter data separated by commas" required>
+
+            <label for="group2">Group 2 Data:</label>
+            <input type="text" id="group2" placeholder="Enter data separated by commas" required>
+        </form>
+        <form id="alphaForm">
+            <label for="alphaSelect">Select Significance Level:</label>
+            <select id="alphaSelect">
+                <option value="0.01">1%</option>
+                <option value="0.05">5%</option>
+                <option value="0.10">10%</option>
+            </select>
+            <button type="button" onclick="calculateHomogeneity()">Calculate Homogeneity</button>
+        </form>
+
+        <div id="result">
+            <table id="resultTable"></table>
+            <div id="distributionTable">
+                <h3>F Distribution Table</h3>
+                <table id="alphaResultTable"></table>
+            </div>
+        </div>
+    </div>
+    
+    <footer> &copy; 2023 Uji Homogenitas Data, Build By <a href="https://github.com/wahyusnjy" style="color:bisque"> Me</a> And ChatGPT</footer>
+    <script src="script.js"></script>
+</body>
+</html>
