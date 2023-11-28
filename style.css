@@ -48,24 +48,24 @@ button:hover {
     background-color: #45a049;
 }
 
-#resultTable, #alphaResultTable {
+#resultTable, #alphaResultTable, #VariansTable {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
 
-#resultTable th, #resultTable td, #alphaResultTable th, #alphaResultTable td {
+#resultTable th, #resultTable td, #alphaResultTable th, #alphaResultTable td, #VariansTable th , #VariansTable td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
 }
 
-#resultTable th, #alphaResultTable th {
+#resultTable th, #alphaResultTable th , #VariansTable th{
     background-color: #4caf50;
     color: white;
 }
 
-#resultTable tr:nth-child(even), #alphaResultTable tr:nth-child(even) {
+#resultTable tr:nth-child(even), #alphaResultTable tr:nth-child(even), #VariansTable tr:nth-child(even){
     background-color: #f2f2f2;
 }
 
